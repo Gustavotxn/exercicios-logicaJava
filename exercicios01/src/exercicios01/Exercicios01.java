@@ -41,7 +41,12 @@ public class Exercicios01 {
         System.out.println(NumeroPerfeito(21));  
         System.out.println(NumeroPerfeito(12));  
         
-        
+    
+    
+    
+    
+    
+    
     
     }
 }
