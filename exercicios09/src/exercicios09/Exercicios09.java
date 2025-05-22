@@ -1,21 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package exercicios09;
 
-/**
- *
- * @author aluno.saolucas
- */
 public class Exercicios09 {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static double calcularPorcentagem(double valorTotal, double porcentagem) {
+        return (valorTotal * porcentagem) / 100;
     }
-    
+
+    public static void main(String[] args) {
+
+        double valorTotal = 200.0;
+        double porcentagem = 15.0;
+
+        double valorCalculado = calcularPorcentagem(valorTotal, porcentagem);
+
+        System.out.printf("%.2f%% de %.2f é %.2f%n", porcentagem, valorTotal, valorCalculado);
+    }
 }
+
+
+    
+
