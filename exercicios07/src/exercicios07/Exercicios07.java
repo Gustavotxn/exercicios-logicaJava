@@ -1,21 +1,27 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package exercicios07;
 
-/**
- *
- * @author aluno.saolucas
- */
 public class Exercicios07 {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static int calcularMDC(int a, int b) {
+
+        if (a < b) {
+            int temp = a;
+            a = b;
+            b = temp;
+        }
+
+        while (b != 0) {
+            int resto = a % b;
+            a = b;
+            b = resto;
+        }
+
+        return a;
     }
-    
+
+    public static void main(String[] args) {
+        System.out.println(calcularMDC(56, 98));
+        System.out.println(calcularMDC(101, 10));
+        System.out.println(calcularMDC(35, 10));
+    }
 }
